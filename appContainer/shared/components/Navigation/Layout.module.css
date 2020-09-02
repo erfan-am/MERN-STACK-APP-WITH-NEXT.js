@@ -1,0 +1,15 @@
+.navigation{
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    flex-direction: row;
+}
+.navLinks{
+    display:flex;
+    justify-content:space-between;
+    flex-direction: row;
+}
+.a{
+    color:white;
+    margin-top: 5px;
+}

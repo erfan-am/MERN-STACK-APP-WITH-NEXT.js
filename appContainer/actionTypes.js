@@ -1,0 +1,3 @@
+export const INPUT_CHANGE="INPUT_CHANGE";
+export const INPUT_TOUCH="INPUT_TOUCH";
+export const INPUT_CHANGE_FORM="INPUT_CHANGE_FORM"

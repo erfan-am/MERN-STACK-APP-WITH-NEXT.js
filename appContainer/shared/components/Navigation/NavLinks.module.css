@@ -1,0 +1,15 @@
+.NavLink{
+    list-style: none;
+    padding:8px;
+
+}
+.navLinkItem{
+text-decoration:none;
+color:white;
+}
+.navLinkItem:hover{
+border-bottom:0.5px solid #f9f9f9f9
+}
+.navLinkItem.active{
+border-bottom:0.5px solid
+}
