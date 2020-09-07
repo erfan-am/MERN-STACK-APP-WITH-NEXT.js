@@ -3,6 +3,7 @@ import Header from './Header'
 import NavLink from './NavLink'
 import Link from 'next/link'
 import styles from './Layout.module.css'
+import  { AuthContex } from '../../context/contextApi'
 export const Layout = (props) => {
     return (
         <React.Fragment> 
@@ -13,12 +14,16 @@ export const Layout = (props) => {
                 <a className={styles.a}>YourPlaces</a>
                </Link>
             </h1>
-                <ul className={styles.navLinks}>
-                    <NavLink path="/users" title="users" />
-                    <NavLink path="/1/places" title="MyPlaces" />
-                    <NavLink path="/places/newplace" title="New Place" />
-                    <NavLink path="/auth" title="Authenticate" />
-                </ul>
+                   <AuthContex>
+                   {({user})=> (<ul className={styles.navLinks}>
+                            <NavLink path="/users" title="users" />
+                           {user && <NavLink path="/1/places" title="MyPlaces" />}
+                           {user && <NavLink path="/places/newplace" title="New Place" />}
+                            <NavLink path="/auth" title="Authenticate" />
+                        </ul>)
+                            }
+                   </AuthContex>
+                   
             </nav>
         </Header>
         <main style={{margin:'100px auto'}}>
