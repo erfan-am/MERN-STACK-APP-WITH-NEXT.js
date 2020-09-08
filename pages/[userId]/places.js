@@ -14,10 +14,10 @@ const DUMMY_PLACES = [
         lat: 40.7484405,
         lng: -73.9878584
       },
-      creator: '1'
+      creator: 1
     },
     {
-      id: '2',
+      id: 2,
       title: 'Empire State Building',
       description: 'One of the most famous sky scrapers in the world!',
       imageUrl:
@@ -27,7 +27,7 @@ const DUMMY_PLACES = [
         lat: 40.7484405,
         lng: -73.9878584
       },
-      creator: '2'
+      creator: 2
     }
   ];
   
